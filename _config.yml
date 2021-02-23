@@ -103,5 +103,4 @@ theme: miccall
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/huangxinping/huangxinping.github.io.git
-
+  repo: git@github.com:huangxinping/huangxinping.github.io.git
