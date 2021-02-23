@@ -25,6 +25,11 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
     
+    # Set CNAME with special domain
+    - name: Set CNAME
+      run: |
+        echo "www.huangxinping.com" >> CNAME
+
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
@@ -36,6 +41,3 @@ jobs:
     - name: Get the output
       run: |
         echo "${{ steps.deploy.outputs.notify }}"
-    - name: Set CNAME
-      run: |
-        echo "www.huangxinping.com" >> CNAME
