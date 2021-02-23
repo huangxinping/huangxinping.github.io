@@ -65,25 +65,24 @@
 	
 <meta name="generator" content="Hexo 5.4.0"></head>
     
-		<body class="is-loading">
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in overlay">
+    <div id="wrapper" class="fade-in">
         <!-- Intro 头部显示 s -->
-                <div id="intro">
-            <h1>I am<br />
-                        Monor </h1>
-            <p> What i can't create <br/> I don't understand
-            </p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">HOWDY</a>
 </header>
-        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special" >
             <ul class="menu links" >
@@ -134,55 +133,46 @@
                     
 			</ul>
 </nav>
-        <!-- Nav 导航条 end -->
-        <!-- Main 主要部分 start -->
-        
-        <!-- 文章列表   s -->
-        <div id="main" style="background-color: transparent; padding:0;">
-        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
-            <div class="link_row">
-                <!-- 文章sample  s-->
 
-                
-                <div class="6u 12u(narrower)">
-                    <section class="link_box special">
-                       <a href="/2017/05/26/hello-world/">
-                        <div class="page_title" style="background-image: url(/thumbnails/title.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
-                            <!--标题-->
-                            <h2 class="page_title_text"> Hello World </h2>
-                            <!--段落-->
-                        </div>
-                        </a>
-                        <div class="home-post-info">
-                            <!-- Author Avatar -->
-                            <div class="home-post-info-author-avatar">
-                                <h6><span class="home-post-info-data">2017-05-26</span></h6>
-                                <div class="home-post-info-Category">
-                                    <!-- Category -->
-                                    <span>
-                            <h6>
-                            <a class="post_category-link" target="_blank" rel="noopener" href="http://localhost:4000/categories/Algorithm/">
-                                <a class="post_category-link" href="/categories/Hexo/">Hexo</a></a>
-                            </h6>
-                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- 文章sample  e-->
-            
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/thumbnails/title.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >为什么这么设计系列文章</h2></a>
             </div>
-        </section>
-        </div>
-        <!-- 文章列表   end -->
-        <!-- Main 主要部分 end -->
-        <!-- footer  页码 start-->
-        <footer style="text-align: center; padding-top: 2em;">
-  
-</footer>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <blockquote>
+<p>为什么这么设计（Why’s THE Design）是一系列关于计算机领域中程序设计决策的文章，我们在这个系列的每一篇文章中都会提出一个具体的问题并从不同的角度讨论这种设计的优缺点、对具体实现造成的影响。如果你有想要了解的问题，可以在文章下面留言。</p>
+</blockquote>
+<h1 id="按分类组织"><a href="#按分类组织" class="headerlink" title="按分类组织"></a>按分类组织</h1><h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><ul>
+<li>001 <a target="_blank" rel="noopener" href="https://www.baidu.com/">为什么 TCP 建立连接需要三次握手</a></li>
+</ul>
 
-        <!-- footer  页码 end-->
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 changyan -->
+<div id="changyan-comment">
+    <!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="2021/02/23/whys-the-design/"  ></div>
+<script type="text/javascript">
+(function(){
+var appid = 'cyvk23DNF';
+var conf = 'prod_1ac0c5be7ecbf7b4e323782001fb0bab';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+</div>
+<style>
+    #changyan-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -193,11 +183,10 @@
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
         </div>
-        <!-- Copyright 版权 end -->
     </div>
-    <!-- Wrapper 外包 e-->
-    <!-- Scripts -->
 </body>
+
+
 
  	
 </html>
